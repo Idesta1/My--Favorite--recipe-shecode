@@ -48,6 +48,7 @@ nav li.active a {
 }
 header{
     background:#d6e3c0;
+    
 }
 div{
     display: block;
@@ -123,7 +124,7 @@ a{
 .recipe-media{
     width: 560px;
     height: 315px;
-    
+    margin-bottom: 30px;
 }
 
 @media (max-width: 900px){

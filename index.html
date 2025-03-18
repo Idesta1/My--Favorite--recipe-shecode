@@ -22,11 +22,188 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
- 
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
   </head>
   <body>
+    <style>
+      body{
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+}
+nav {
+    padding: 15px 0;
+    
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 52px;
+    margin-left: 15px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #0f3e16;
+    background: linear-gradient(to right, #d8e54d, #d36352);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 30px #ff7e00;
+    column-gap: 0.5rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #0f3e16;
+    font-size: 20px;
+    
+}
+li.active a {
+    color: var(--secondary-color);
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--secondary-color)
+}
+
+
+.active{
+    background: #d36352;
+    padding: 15px;
+    border-radius: 25px;
+    color:#fff;
+}
+header{
+    background:#d6e3c0;
+    
+}
+div{
+    display: block;
+}
+.left{
+    line-height: 6.5;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.left h2{
+    font-size: 38px;
+    font-weight: 00px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.left h1{
+    font-size: 75px;
+    color:#d36352;
+    font-weight: 900px;
+}
+ .primary-link {
+    text-decoration: none;
+    border: 1px solid none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background:#d36352;
+    color: #fff;
+    letter-spacing: 5px;
+    
+}
+.primary-link:hover{
+    color: black;
+    background: #d6e3c0;
+}
+.img-responsive{
+   display: block;
+   width: 600px;
+   margin: auto;
+   border-radius: 50%;
+   margin-bottom: 30px;
+   padding: 20px 120px;
+  transition: opacity 150ms ease-in-out;
+   
+}
+.img-responsive:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+}
+
+.social-media{
+    display: flex;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+    background-color: #d6e3c0;
+}
+        
+.social-media i:hover {
+    background-color:#ff7e00;
+}
+.recipe-container {
+   text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("../IMG_6450.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 110px;
+    border: 5px solid none;
+    color: white;
+}
+.recipe-media{
+    width: 560px;
+    height: 315px;
+    margin-bottom: 30px;
+}
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer a{
+    text-decoration: none;
+    color:#0f3e16
+}
+
+
+@media (max-width: 900px){
+    .logo{
+        font-size: 15px;
+    }
+    nav li a{
+        font-size: 10px;
+    }
+    .img-responsive{
+        width: 400px;
+    }
+    .left h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .recipe-media{
+        width: 230px;
+        height: 150px;
+    }
+}
+
+    </style>
     <header>
     <div class="container">
     <nav class="d-flex justify-content-between">
@@ -47,8 +224,14 @@
     <h2>Let's Get you started with one of my favorite Delcious Vegan Sliders!</h2>
     <a href="https://youtu.be/Pjpu9Rxzyvk" target="_blank" class="primary-link">VIEW RECIPE <i class='bx bx-play-circle'></i></a>
 </div>
-<div>
+<div class="right">
 <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/367/original/IMG_6449.jpg?1742076785" class="img-responsive"/>
+</div>
+<div class="social-media">
+  <a href="#"><i class='bx bxl-youtube'></i></a>
+  <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+  <a href="#"><i class='bx bxl-tiktok' ></i></a>
+  <a href="#"><i class='bx bxl-pinterest'></i></a>
 </div>
 </section>
 <section>
@@ -98,5 +281,7 @@ new Typewriter("h1", {
  cursor: "",
 });
 </script>
-
+<footer>
+  Coded by <a href="https://portfolioigu.netlify.app/" target="_blank">Iglesia G Desta</a>, open-sourced on <a href="https://github.com/Idesta1/My--Favorite--recipe-shecode" target="_blank">GitHub</a> ®
+</footer>
 </html>
